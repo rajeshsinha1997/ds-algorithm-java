@@ -1,6 +1,6 @@
 // video explanation - https://youtu.be/p3HbBlcXDTE
 // tag - math
-package algorithms;
+package com.rajesh.algorithms;
 
 public class EuclideanDistance {
 
@@ -26,11 +26,5 @@ public class EuclideanDistance {
 
         // calculate and return the euclidean distance
         return Math.sqrt((xDifference * xDifference) + (yDifference * yDifference));
-    }
-
-    public static void main(String[] args) {
-        // test algorithm
-        System.out.println(calculateEuclideanDistanceBetweenTwoPoints(3, 3, 5, 3) == 2.0);
-        System.out.println(calculateEuclideanDistanceBetweenTwoPoints(2, 2, 3, 3) == 1.4142135623730951);
     }
 }
