@@ -11,6 +11,7 @@ public class Array_2433 {
     public int[] findArray(int[] pref) {
         // iterate over the given array and deduce the original element
         for (int i = pref.length - 1; i > 0; i--) {
+            // deduce the original element using XOR
             pref[i] = pref[i] ^ pref[i - 1];
         }
 
