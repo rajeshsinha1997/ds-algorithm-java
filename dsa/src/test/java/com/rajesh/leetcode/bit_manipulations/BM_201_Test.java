@@ -18,6 +18,9 @@ class BM_201_Test {
         assertEquals(0, testObject.rangeBitwiseAnd(1, 2));
         assertEquals(1073741824, testObject.rangeBitwiseAnd(1073741824, 2147483647));
         assertEquals(1, testObject.rangeBitwiseAnd(1, 1));
+
+        // custom test cases
+        assertEquals(0, testObject.rangeBitwiseAnd(6, 13));
     }
 
 }

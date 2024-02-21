@@ -11,41 +11,15 @@ public class BM_201 {
      * @return bitwise AND of all numbers from left to right
      */
     public int rangeBitwiseAnd(int left, int right) {
-        // create variable to count the total number of bit shifted
-        int totalBitShifted = 0;
-
-        // while the left range limit is not equal to the right range limit
-        while (left != right) {
-            // right shift both range limits by 1
-            left >>= 1;
-            right >>= 1;
-
-            // increase total number of shifts by 1
-            totalBitShifted++;
+        // execute while the right range limit is greater than the left range limit
+        while (right > left) {
+            // update the right range limit doing bitwise AND operation of right with
+            // (right-1) and store the value back into the right range limit
+            // Brian Kernighan's Algorithm
+            right &= right - 1;
         }
 
-        // take any of the range limit and right shift the same number of bits and
-        // return that as result
-        return left << totalBitShifted;
+        // return the value of the right range limit as the result
+        return right;
     }
 }
-
-/**
- * To efficiently solve this problem, we need to observe the bitwise AND
- * operation. When we perform bitwise AND on two numbers, the result preserves
- * common bits between the binary representations of the two numbers. If there
- * is any bit position where one of the numbers has a 0, the result will have a
- * 0 at that position.
- * 
- * In the given range [left, right], if we have different bits in any position
- * between left and right, then their AND result in that position will be 0. So,
- * we need to find the common bits between left and right from the most
- * significant bit (MSB) to the least significant bit (LSB).
- * 
- * The approach is as follows:
- * 
- * 1. Find the common prefix (common bits) between left and right by shifting
- * both to the right until they become equal.
- * 
- * 2. Append zeros to the right of the common prefix to reconstruct the result.
- */
