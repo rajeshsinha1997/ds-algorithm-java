@@ -1,18 +1,18 @@
 package com.rajesh.leetcode.arrays;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class Array_2610_Test {
+class Array_2610_Test {
     // create test object instance
     Array_2610 testObject = new Array_2610();
 
     @Test
-    public void test_array_2610() {
+    void test_array_2610() {
         // given test cases
 
         // prepare expected data

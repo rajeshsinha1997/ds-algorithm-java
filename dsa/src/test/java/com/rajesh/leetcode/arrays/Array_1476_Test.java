@@ -1,12 +1,12 @@
 package com.rajesh.leetcode.arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class Array_1476_Test {
+class Array_1476_Test {
     @Test
-    public void test_array_1476() {
+    void test_array_1476() {
         // given test case - 1
         Array_1476 testObject = new Array_1476(new int[][] { { 1, 2, 1 }, { 4, 3, 4 }, { 3, 2, 1 }, { 1, 1, 1 } });
 
