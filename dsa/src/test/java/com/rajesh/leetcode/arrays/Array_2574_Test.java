@@ -10,6 +10,7 @@ class Array_2574_Test {
 
     @Test
     void test_array_2574() {
+        // given test cases
         assertArrayEquals(new int[] { 15, 1, 11, 22 }, testObject.leftRightDifference(new int[] { 10, 4, 8, 3 }));
         assertArrayEquals(new int[] { 0 }, testObject.leftRightDifference(new int[] { 1 }));
     }
